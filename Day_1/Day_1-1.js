@@ -210,9 +210,11 @@ var init = [1130,
   
   for (i = 0; i < init.length; i = i + 1) {
     for (j = 1; j < init.length; j = j + 1) {
-      if (init[i] + init[j] == 2020) {
-        var ans = (init[i] * init[j])
-        console.log("Answer " + ans)
+      for (k = 2; k < init.length; k = k + 1) {
+        if (init[i] + init[j] + init[k] == 2020) {
+          var ans = (init[i] * init[j] * init[k])
+          console.log("Answer " + ans)
+        }
       }
     } 
   }
